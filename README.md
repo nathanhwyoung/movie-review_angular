@@ -1,6 +1,6 @@
 # _Movie Review Site_
 
-##### Epicodus Code Review 10/02/2015_
+##### Epicodus Code Review 10/02/2015
 
 #### By Nathan Young
 

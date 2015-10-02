@@ -6,8 +6,13 @@ movieReviewSite.factory('ReviewsFactory', function ReviewsFactory() {
             {
                 name: factory.movieName,
                 review: factory.movieReview,
-                id: factory.reviews.length + 1;
+                id: factory.reviews.length + 1
             }
-        )
+        );
+
+        factory.movieName = null;
+        factory.movieReview = null;
     }
+
+    return factory;
 })

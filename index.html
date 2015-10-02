@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html ng-app="movieReviewSite">
-    <head>
-        <meta charset="utf-8">
-        <title>Nick's Flicks</title>
-        <script src="lib.angular.js"></script>
-        <script src="lib.angular-ui-router.js"></script>
 
+<head>
+    <meta charset="utf-8">
+    <title>Nick's Flicks</title>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="services/ReviewsFactory.js"></script>
+    <script src="services/UtilitiesFactory.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
-    <body>
-        
-        <div class="container">
-			<div ui-view></div>
-		</div>
+<body>
 
-    </body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="nick-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a class="navbar-brand" href="/">Nick's Flickz</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Let's talk about movies!</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn-default btn-lg navbar-btn inv-btn pull-right" type="button" name="button" invert>Nite Mode</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ui-view></div>
+    </div>
+
+</body>
+
 </html>
