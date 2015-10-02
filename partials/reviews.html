@@ -1,0 +1,29 @@
+<div class="row">
+
+    <div class="col-sm-8">
+
+        <div ui-view></div>
+
+        <div id="new-review">
+            <h3>Create New Movie Review</h3>
+            <form ng-submit="ReviewsFactory.addReview()">
+                <input type="text" ng-model="ReviewsFactory.movieName"
+                    class="form-control" placeholder="Title" required></input>
+                <textarea ng-model="ReviewsFactory.movieReview" rows="8"
+                    class="form-control" placeholder="Review goes here" required></textarea>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-sm-8">
+        <ul>
+            <li ng-repeat="item in reviews">
+                <a ui-sref="reviews.detail({reviewId: review.id})">
+                    {{ item.movieName }}
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
