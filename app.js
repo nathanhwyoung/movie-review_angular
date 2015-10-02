@@ -5,4 +5,10 @@ movieReviewSite.config(function($stateProvider, $urlRouteProvider) {
         url: "",
         templateUrl: "partials/home.html",
     });
+
+    $stateProvider.state('reviews', {
+        url: "/reviews",
+        templateUrl: "partials/reviews.html",
+        controller: 'ReviewsCtrl',
+    });
 })
