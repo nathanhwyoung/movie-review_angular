@@ -28,6 +28,8 @@ movieReviewSite.factory('ReviewsFactory', function ReviewsFactory() {
             }
         );
         // console.log(factory.movieName);
+        // console.log(factory.id);
+        // console.log(factory.reviews);
 
         factory.movieName = null;
         factory.movieReview = null;
