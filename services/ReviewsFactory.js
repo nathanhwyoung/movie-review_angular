@@ -22,8 +22,8 @@ movieReviewSite.factory('ReviewsFactory', function ReviewsFactory() {
     factory.addReview = function() {
         factory.reviews.push(
             {
-                name: factory.movieName,
-                review: factory.movieReview,
+                movieName: factory.movieName,
+                movieReview: factory.movieReview,
                 id: factory.reviews.length + 1
             }
         );
